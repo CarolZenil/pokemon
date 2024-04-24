@@ -10,15 +10,15 @@
     </div>
 
     <div class="row">
-        <div class="col-4 container-pokemon" *ngFor="let pokem of pokemonsList">
+        <div class="col-md-4 col-sm-12 container-pokemon" *ngFor="let pokem of pokemonsList">
             <div class="row pokemon-card" [style.background]="getColor(pokem.types)">
-                <div class="col-sm">
+                <div class="col-6">
                     <h3>{{pokem.name}}</h3>
                     <span *ngFor="let type of pokem.types" class="type" [style.background]="getColor(pokem.types)">
                         {{type.type.name}}
                     </span>
                 </div>
-                <div class="col-sm pokebola">
+                <div class="col-6 pokebola">
                     <img [src]="pokem.sprites.back_default" alt="" width="100%">
                 </div>
             </div>
