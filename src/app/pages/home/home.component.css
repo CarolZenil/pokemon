@@ -1,0 +1,33 @@
+.container-pokemon{
+    padding: 20px;  
+    color: #fff;
+}
+
+.type{
+    border-radius: 4px;
+    margin: 5px;
+    padding: 0px 10px 0px 10px;
+    color: #fff;
+}
+
+.pokemon-card{
+    border-radius: 5px;
+}
+
+.pokebola{
+    background-image: url('../../../assets/pokebola.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+    margin-top: 20px;
+    position: relative;
+}
+
+.pokebola-nav{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 70px;
+}

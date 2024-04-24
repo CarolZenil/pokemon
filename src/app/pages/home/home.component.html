@@ -1,0 +1,29 @@
+<div class="container">
+    <img src="assets/pokebola.png" alt="" class="pokebola-nav">
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <h3>Pokedex</h3>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <input type="text" placeholder="Pokemon name">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 container-pokemon" *ngFor="let pokem of pokemonsList">
+            <div class="row pokemon-card" [style.background]="getColor(pokem.types)">
+                <div class="col-sm">
+                    <h3>{{pokem.name}}</h3>
+                    <span *ngFor="let type of pokem.types" class="type" [style.background]="getColor(pokem.types)">
+                        {{type.type.name}}
+                    </span>
+                </div>
+                <div class="col-sm pokebola">
+                    <img [src]="pokem.sprites.back_default" alt="" width="100%">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
